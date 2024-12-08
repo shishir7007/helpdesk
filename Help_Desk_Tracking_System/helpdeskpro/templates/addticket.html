@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{% static "css/addticket.css" %}">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="icon"><i class="fas fa-dashboard"></i></div>
+            <div class="icon"><i class="fas fa-plus"></i></div>
+            <div class="icon"><i class="fas fa-ticket-alt"></i></div>
+            <div class="icon"><i class="fas fa-bell"></i></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="icon"><i class="fas fa-cogs"></i></div>
+            <div class="icon"><i class="fas fa-question-circle"></i></div>
+            <div class="icon"><i class="fas fa-user-circle"></i></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <form>
+                <marquee behavior="scroll" loop="infinite" width="100%" class="label-green">
+                    "Welcome to Assistify! Submit your issue below, and we'll address it as soon as possible."
+                </marquee><br>
+                <textarea id="ticket-title" class="description" placeholder="Description........."></textarea><br>
+
+                <div class="dropdown-main">
+                    <div class="dropdown-group">
+                        <label for="issue-type">Issue type:</label>
+                        <select id="issue-type" class="dropdown">
+                            <option value="default">select</option>
+                            <option value="technical">Technical</option>
+                            <option value="billing">Billing</option>
+                            <option value="account">Account</option>
+                        </select>
+                    </div>
+
+                    <div class="dropdown-group">
+                        <label for="priority">Priority selection:</label>
+                        <select id="priority" class="dropdown">
+                            <option value="default">select</option>
+                            <option value="minor">Minor</option>
+                            <option value="major">Major</option>
+                            <option value="critical">Critical</option>
+                            <option value="emergency" >Emergency</option>
+                        </select>
+                    </div>
+                </div><br>
+
+                <!-- ticket sidebar -->
+                <div class="ticket-sidebar">
+                    <h3>Ticket Actions</h3>
+                    <div class="ticket-actions">
+                        <button class="btn" id="recently-opened">Recently Opened Tickets</button>
+                        <button class="btn" id="reopen-ticket">Reopen a Ticket</button>
+                    </div>
+
+                    <div id="recent-tickets" class="ticket-list">
+                        <h4>Recently Opened</h4>
+                        <ul>
+                            <li><a href="#">Ticket #12345 - Issue with login</a></li>
+                            <li><a href="#">Ticket #12346 - Page not loading</a></li>
+                            <li><a href="#">Ticket #12347 - Payment issues</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="reopen-section" class="reopen-ticket">
+                        <h4>Reopen a Ticket</h4>
+                        <input type="text" id="ticket-id" placeholder="Enter ticket ID" />
+                        <button class="btn" id="reopen-btn">Reopen Ticket</button>
+                    </div>
+                </div>
+
+                <!-- Drag-and-Drop Image Upload -->
+                <div class="drag-drop-area" id="drag-drop-area">
+                    <p>Drag & Drop Images Here or Click to Select</p>
+                    <input type="file" id="imageInput" multiple accept="image/*" hidden>
+                </div>
+                <div class="thumbnails" id="thumbnailDisplay"></div>
+
+                <!-- submit button -->
+                <button type="submit" class="submit-btn" id="submit-btn">Submit ticket</button>
+                <input type="reset" value="Reset" class="reset-btn" />
+            </form>
+        </div>
+    </div>
+
+    <script src="{% static "js/addticket.js" %}"></script>
+
+</body>
+</html>

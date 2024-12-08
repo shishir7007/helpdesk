@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfdfdf;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5c6b9c;
+}
+
+
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: inherit;
+}
+
+.ticket-table thead {
+    background-color: #f1f1f1;
+}
+
+.ticket-table th,
+.ticket-table td {
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+
+.ticket-table th, a {
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+}
+
+.ticket-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.ticket-table .status {
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.status.open {
+    background-color: #007bff;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    overflow: inherit;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+}
+
+.dropdown-btn i {
+    font-size: 16px;
+   
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #555;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu .priority {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu .priority i {
+    margin-right: 8px;
+}
+
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+
+.add-filter {
+    background-color: #5c6b9c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.add-filter:hover {
+    background-color: #0056b3;
+}

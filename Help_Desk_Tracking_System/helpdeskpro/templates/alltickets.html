@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Tickets</title>
+    {% load  static %}
+    <link rel="stylesheet" href="{% static "css/alltickets" %}"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <h1>All Tickets</h1>
+    <button class="add-filter">+ Add Filter</button>
+    <!-- <div class="dropdown-content">
+        <a href="#">Pending Tickets</a> 
+        <a href="#">Solved Tickets</a> 
+        <a href="#">Closed Ticket</a> 
+    </div> -->
+    <table class="ticket-table">
+        <thead>
+            <tr>
+                <th>Requester</th>
+                <th>Subject</th>
+                <th>Date</th>
+                <th><a href="#">Agent</a></th>
+                <th><a href="">Status</a></th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>luxyss<br><small>reyefam220@luxyss.com</small></td>
+                <td>"My query regarding the refund has not be.....</td>
+                <td class="date">3/11/2024</td>
+                <td>Unassigned</td>
+                <td><span class="status open">Open</span></td>
+                <td>
+                    <div class="dropdown">
+                        <button class="dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:red;"></i> Set priority to Urgent</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:orange;"></i> Set priority to High</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-right" style="color:blue;"></i> Set priority to Medium</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-down" style="color:green;"></i> Set priority to Low</a>
+                            <a href="#">Set as Open</a>
+                            <a href="#">Set as Pending</a>
+                            <a href="#">Set as Solved</a>
+                            <a href="#">Set as Closed</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>kindomd<br><small>bavodo4075@kindomd.com</small></td>
+                <td>"The 'Contact' link on your website le.....</td>
+                <td class="date">3/11/2024</td>
+                <td>Unassigned</td>
+                <td><span class="status open">Open</span></td>
+                <td>
+                    <div class="dropdown">
+                        <button class="dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:red;"></i> Set priority to Urgent</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:orange;"></i> Set priority to High</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-right" style="color:blue;"></i> Set priority to Medium</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-down" style="color:green;"></i> Set priority to Low</a>
+                            <a href="#">Set as Open</a>
+                            <a href="#">Set as Pending</a>
+                            <a href="#">Set as Solved</a>
+                            <a href="#">Set as Closed</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>malik<br><small>otomotive@mailkp.pro</small></td>
+                <td>I was charged twice for the sa....</td>
+                <td class="date">3/11/2024</td>
+                <td>Unassigned</td>
+                <td><span class="status open">Open</span></td>
+                <td>
+                    <div class="dropdown">
+                        <button class="dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:red;"></i> Set priority to Urgent</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:orange;"></i> Set priority to High</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-right" style="color:blue;"></i> Set priority to Medium</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-down" style="color:green;"></i> Set priority to Low</a>
+                            <a href="#">Set as Open</a>
+                            <a href="#">Set as Pending</a>
+                            <a href="#">Set as Solved</a>
+                            <a href="#">Set as Closed</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>brianQ<br><small>rocka1209@airmail.top</small></td>
+                <td>"My account was suspended witho.....</td>
+                <td class="date">3/11/2024</td>
+                <td>Unassigned</td>
+                <td><span class="status open">Open</span></td>
+                <td>
+                    <div class="dropdown">
+                        <button class="dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:red;"></i> Set priority to Urgent</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:orange;"></i> Set priority to High</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-right" style="color:blue;"></i> Set priority to Medium</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-down" style="color:green;"></i> Set priority to Low</a>
+                            <a href="#">Set as Open</a>
+                            <a href="#">Set as Pending</a>
+                            <a href="#">Set as Solved</a>
+                            <a href="#">Set as Closed</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Natalie<br><small>nayely@681mail.com</small></td>
+                <td>"The 'Reset Password' featu....</td>
+                <td class="date">3/11/2024</td>
+                <td>Unassigned</td>
+                <td><span class="status open">Open</span></td>
+                <td>
+                    <div class="dropdown">
+                        <button class="dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:red;"></i> Set priority to Urgent</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:orange;"></i> Set priority to High</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-right" style="color:blue;"></i> Set priority to Medium</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-down" style="color:green;"></i> Set priority to Low</a>
+                            <a href="#">Set as Open</a>
+                            <a href="#">Set as Pending</a>
+                            <a href="#">Set as Solved</a>
+                            <a href="#">Set as Closed</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>shishir<br><small>spirobinkley1@areltalas.cfd</small></td>
+                <td>The live chat support is unres...</td>
+                <td class="date">3/11/2024</td>
+                <td>Unassigned</td>
+                <td><span class="status open">Open</span></td>
+                <td>
+                    <div class="dropdown">
+                        <button class="dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:red;"></i> Set priority to Emergency</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-up" style="color:orange;"></i> Set priority to Critical</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-right" style="color:blue;"></i> Set priority to Major</a>
+                            <a href="#" class="priority"><i class="fas fa-arrow-down" style="color:green;"></i> Set priority to Minor</a>
+                            <a href="#">Set as Open</a>
+                            <a href="#">Set as Pending</a>
+                            <a href="#">Set as Solved</a>
+                            <a href="#">Set as Closed</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <script src="{% static "js/alltickets.js" %}"> </script>
+</body>
+</html>

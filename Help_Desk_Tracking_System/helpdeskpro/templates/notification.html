@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications</title>
+   {% load static %}
+   <link rel="stylesheet" href="{% static "css/notification.css" %}"
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h2>Notifications</h2>
+      <div class="actions">
+        <button id="markAllRead">Mark All as Read</button>
+        <button id="showUnread">Show Unread</button>
+      </div>
+    </div>
+
+    <div class="notifications">
+      <div class="notification unread">
+        <div class="notification-header">
+          <div class="avatar">
+            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Support Agent Avatar">
+          </div>
+          <div class="info">
+            <strong class="name">Alex Pereira</strong>
+            <span class="role">Support Agent</span>
+            <span class="timestamp">2 hours ago</span>
+          </div>
+        </div>
+        <div class="notification-body">
+          <p>Hello, thank you for reaching out. We are investigating your issue and will get back to you shortly.</p>
+        </div>
+      </div>
+
+      <div class="notification read">
+        <div class="notification-header">
+          <div class="avatar">
+            <img src="https://www.w3schools.com/w3images/avatar3.png" alt="Admin Avatar">
+          </div>
+          <div class="info">
+            <strong class="name">Admin</strong>
+            <span class="role">Admin</span>
+            <span class="timestamp">30 minutes ago</span>
+          </div>
+        </div>
+        <div class="notification-body">
+          <p>We have resolved the issue. Please confirm if everything is working fine on your end.</p>
+        </div>
+      </div>
+
+   
+      <div class="notification unread">
+        <div class="notification-header">
+          <div class="avatar">
+            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Support Agent Avatar">
+          </div>
+          <div class="info">
+            <strong class="name">Rosie Gigante</strong>
+            <span class="role">Support Agent</span>
+            <span class="timestamp">1 day ago</span>
+          </div>
+        </div>
+        <div class="notification-body">
+          <p>We are still working on your case and will update you soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{% static "js/notification.js" %}"></script>
+
+</body>
+</html>
